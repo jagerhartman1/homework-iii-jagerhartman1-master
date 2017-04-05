@@ -6,4 +6,4 @@ install:
 - "pip install -U pip"
 - "pip install -U pandas scikit-learn numpy matplotlib imblearn nbconvert jupyter_client ipykernel"
 # command to run tests
-script: travis_wait jupyter-nbconvert --execute hw3_starter_notebook.ipynb
+script: travis_wait 20 jupyter-nbconvert --execute hw3_starter_notebook.ipynb --ExecutePreprocessor.timeout=None
